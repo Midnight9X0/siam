@@ -1,0 +1,134 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  #app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Page Styles */
+  .page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .page.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-background video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  header {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  /* Content Styles */
+  .content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .photo-frame {
+    margin-bottom: 20px;
+  }
+  
+  .photo-frame img {
+    max-width: 200px; /* Adjusted size for better visibility */
+    border: 10px solid rgb(244, 243, 200);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .photo-frame.left {
+    align-self: flex-start;
+  }
+  
+  .photo-frame.right {
+    align-self: flex-end;
+  }
+  
+  .photo-frame.middle {
+    align-self: center;
+  }
+  
+  .custom-message {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    max-width:100%;
+  }
+  
+  /* Button Styles */
+  .next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .next-button:hover {
+    background: #ff1493;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Flowers Animation */
+  .animated-flowers img {
+    position: absolute;
+    animation: flowerFall 5s infinite;
+    width: 200px;
+  }
+  
+  @keyframes flowerFall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
