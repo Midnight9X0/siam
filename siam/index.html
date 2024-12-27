@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Page 1 -->
+    <div class="page video-background" id="page1">
+      <video autoplay muted loop>
+        <source src="videos/page1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="content">
+        <h1>Happy Birthday dear  siam, </h1>
+        <p>Happy birthday dear ....
+          You the best person I have ever known you care me love me you the best actually enjoy your day have a great one and stay happy n healthy always laugh.</p>
+        <button class="next-button" onclick="nextPage()">Next Page</button>
+      </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page" id="page2" style="background-image: url('backgrounds/background2.jpg');">
+      <header>Happy Birthday</header>
+      <div class="content">
+        <div class="photo-frame left">
+          <img src="photos/photo2.jpg" alt="Photo">
+        </div>
+        <div class="custom-message">
+          <p>i wish that you always have this beautiful smile..</p>
+        </div>
+      </div>
+      <button class="next-button" onclick="nextPage()">Keep going</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page" id="page3" style="background-image: url('backgrounds/background3.jpg');">
+      <header>Happy Birthday</header>
+      <div class="content">
+        <div class="photo-frame right">
+          <img src="photos/photo3.jpg" alt="Photo">
+        </div>
+        <div class="custom-message">
+          <p>Do the things you love to do. i will awlays be proud of you.</p>
+        </div>
+      </div>
+      <button class="next-button" onclick="nextPage()">Next Page </button>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page" id="page4" style="background-image: url('backgrounds/background4.jpg');">
+      <header>Happy Birthday</header>
+      <div class="content">
+        <div class="photo-frame middle">
+          <img src="photos/photo4.jpg" alt="Photo">
+        </div>
+        <div class="custom-message">
+          <p>I hope you wake up with a smile on your face..</p>
+        </div>
+      </div>
+      <button class="next-button" onclick="nextPage()">Next page</button>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page" id="page5" style="background-image: url('backgrounds/background5.jpg');">
+      <header>Again happy birthday siam!</header>
+      <div class="content">
+        <div class="photo-frame right">
+          <img src="photos/photo5.jpg" alt="Photo">
+        </div>
+        <div class="custom-message">
+          <p>Wish you a many many happy returns of the day 🥰i hope your special day is the beginning 🥰
+            May all your dreams come true today and always 😌god bless you</p>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
